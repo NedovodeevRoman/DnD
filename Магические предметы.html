@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">
+    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/18.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 634%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000; 
+            font-size: 1vw;            
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.2%;
+      width: 98%;
+      height: 1.2%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;   
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+.a31 h1 {
+      position: absolute;
+      left: 2%;
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 1.6%;
+      width: 98%;
+      height: 98.2%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a32 a{
+      position: absolute;
+      left: 1%;
+      right: 1%;
+      font-size: 1vw;
+}
+
+.a3b {
+      width: 98%;
+      vertical-align: middle;
+      font-size: 1vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      font-size: 1vw;
+}
+
+.a3b1 {
+      width: 98%;
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+      font-size: 1vw;
+
+}
+
+.a32 td {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+      font-size: 1vw;
+
+}
+
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png" width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+            <div class="a31"><h1>Магические предметы</h1></div>
+            <div class="a32">
+<a><b>Источник:</b> «Dungeon master's guide»<br>
+<br>
+<div class="a3b">
+<div><h3>Магические предметы, таблица А</h3><br>
+<table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-50</td><td>Зелье лечения</td></tr>
+      <tr><td>51-60</td><td>Свиток заклинания (заговор)</td></tr>
+      <tr><td>61-70</td><td>Зелье лазания</td></tr>
+      <tr><td>71-90</td><td>Свиток заклинания (1 уровень)</td></tr>
+      <tr><td>91-94</td><td>Свиток заклинания (2 уровень)</td></tr>
+      <tr><td>95-98</td><td>Зелье большого лечения</td></tr>
+      <tr><td>99</td><td>Сумка хранения</td></tr>
+      <tr><td>00</td><td>Парящая сфера</td></tr>
+      </tbody></table></div>
+<div><h3>Магические предметы, таблица Б</h3><br>
+<table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-30</td><td>Свиток заклинания (8 уровень)</td></tr>
+      <tr><td>31-55</td><td>Зелье силы штормового великана</td></tr>
+      <tr><td>56-70</td><td>Зелье превосходного лечения</td></tr>
+      <tr><td>71-85</td><td>Свиток заклинания (9 уровень)</td></tr>
+      <tr><td>86-93</td><td>Универсальный растворитель</td></tr>
+      <tr><td>94-98</td><td>Стрела убийства</td></tr>
+      <tr><td>99-00</td><td>Превосходный клей</td></tr>
+      </tbody></table>
+</div>
+</div>
+      <br>
+<div class="a3b">
+<div><h3>Магические предметы, таблица В</h3><br>
+      <table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-15</td><td>Зелье большого лечения</td></tr>
+      <tr><td>16-22</td><td>Зелье огненного дыхания</td></tr>
+      <tr><td>23-29</td><td>Зелье сопротивления</td></tr>
+      <tr><td>30-34</td><td>Боеприпасы +1</td></tr>
+      <tr><td>35-39</td><td>Зелье дружбы с животными</td></tr>
+      <tr><td>40-44</td><td>Зелье силы холмового великана</td></tr>
+      <tr><td>45-49</td><td>Зелье увеличения</td></tr>
+      <tr><td>50-54</td><td>Зелье подводного дыхания</td></tr>
+      <tr><td>55-59</td><td>Свиток заклинания (2 уровень)</td></tr>
+      <tr><td>60-64</td><td>Свиток заклинания (3 уровень)</td></tr>
+      <tr><td>65-67</td><td>Сумка хранения</td></tr>
+      <tr><td>68-70</td><td>Мазь Кеогтома</td></tr>
+      <tr><td>71-73</td><td>Масло ускользания</td></tr>
+      <tr><td>74-75</td><td>Порошок исчезновения</td></tr>
+      <tr><td>76-77</td><td>Порошок сухости</td></tr>
+      <tr><td>78-79</td><td>Порошок чихания и удушья</td></tr>
+      <tr><td>80-81</td><td>Камень элементаля</td></tr>
+      <tr><td>82-83</td><td>Любовное зелье</td></tr>
+      <tr><td>84</td><td>Алхимический сосуд</td></tr>
+      <tr><td>85</td><td>Шапка подводного дыхания</td></tr>
+      <tr><td>86</td><td>Плащ ската</td></tr>
+      <tr><td>87</td><td>Парящая сфера</td></tr>
+      <tr><td>88</td><td>Ночные очки</td></tr>
+      <tr><td>89</td><td>Шлем понимания языков</td></tr>
+      <tr><td>90</td><td>Неподвижный жезл</td></tr>
+      <tr><td>91</td><td>Фонарь обнаружения</td></tr>
+      <tr><td>92</td><td>Доспех моряка</td></tr>
+      <tr><td>93</td><td>Мифрильный доспех</td></tr>
+      <tr><td>94</td><td>Зелье яда</td></tr>
+      <tr><td>95</td><td>Кольцо плавания</td></tr>
+      <tr><td>96</td><td>Мантия полезных предметов</td></tr>
+      <tr><td>97</td><td>Верёвка лазания</td></tr>
+      <tr><td>98</td><td>Седло кавалериста</td></tr>
+      <tr><td>99</td><td>Волшебная палочка обнаружения магии</td></tr>
+      <tr><td>00</td><td>Волшебная палочка секретов</td></tr>
+      </tbody></table></div>
+<div><h3>Магические предметы, таблица Г</h3><br>
+      <table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-15</td><td>Зелье отличного лечения</td></tr>
+      <tr><td>16-22</td><td>Свиток заклинания (4 уровень)</td></tr>
+      <tr><td>23-27</td><td>Боеприпасы +2</td></tr>
+      <tr><td>28-32</td><td>Зелье ясновидения</td></tr>
+      <tr><td>33-37</td><td>Зелье уменьшения</td></tr>
+      <tr><td>38-42</td><td>Зелье газообразной формы</td></tr>
+      <tr><td>43-47</td><td>Зелье силы ледяного великана</td></tr>
+      <tr><td>48-52</td><td>Зелье силы каменного великана</td></tr>
+      <tr><td>53-57</td><td>Зелье героизма</td></tr>
+      <tr><td>58-62</td><td>Зелье неуязвимости</td></tr>
+      <tr><td>63-67</td><td>Зелье чтения мыслей</td></tr>
+      <tr><td>68-72</td><td>Свиток заклинания (5 уровень)</td></tr>
+      <tr><td>73-75</td><td>Эликсир здоровья</td></tr>
+      <tr><td>76-78</td><td>Масло эфирности</td></tr>
+      <tr><td>79-81</td><td>Зелье силы огненного великана</td></tr>
+      <tr><td>82-84</td><td>Перо Кваля</td></tr>
+      <tr><td>85-87</td><td>Свиток защиты</td></tr>
+      <tr><td>88-89</td><td>Сумка с бобами</td></tr>
+      <tr><td>90-91</td><td>Бусина силы</td></tr>
+      <tr><td>92</td><td>Колокольчик открывания</td></tr>
+      <tr><td>93</td><td>Графин бесконечной воды</td></tr>
+      <tr><td>94</td><td>Очки детального зрения</td></tr>
+      <tr><td>95</td><td>Складная лодка</td></tr>
+      <tr><td>96</td><td>Удобный рюкзак Хеварда</td></tr>
+      <tr><td>97</td><td>Подковы скорости</td></tr>
+      <tr><td>98</td><td>Ожерелье огненных шаров</td></tr>
+      <tr><td>99</td><td>Медальон здоровья</td></tr>
+      <tr><td>00</td><td>Камни послания</td></tr>
+      </tbody></table>
+</div>
+</div>
+      <br>
+<div class="a3b">
+<div><h3>Магические предметы, таблица Д</h3><br>
+      <table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td colspan="2" align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-05</td><td colspan="2">Защитник</td></tr>
+      <tr><td>06-10</td><td colspan="2">Молот грома</td></tr>
+      <tr><td>11-15</td><td colspan="2">Клинок удачи</td></tr>
+      <tr><td>16-20</td><td colspan="2">Меч ответа</td></tr>
+      <tr><td>21-23</td><td colspan="2">Святой мститель</td></tr>
+      <tr><td>24-26</td><td colspan="2">Кольцо призыва джинна</td></tr>
+      <tr><td>27-29</td><td colspan="2">Кольцо невидимости</td></tr>
+      <tr><td>30-32</td><td colspan="2">Кольцо отражения заклинаний</td></tr>
+      <tr><td>33-35</td><td colspan="2">Жезл величественной мощи</td></tr>
+      <tr><td>36-38</td><td colspan="2">Посох магов</td></tr>
+      <tr><td>39-41</td><td colspan="2">Меч головоруб</td></tr>
+      <tr><td>42-43</td><td colspan="2">Пояс силы облачного великана</td></tr>
+      <tr><td>44-45</td><td colspan="2">Доспех +2 (кираса)</td></tr>
+      <tr><td>46-47</td><td colspan="2">Доспех +3 (кольчуга)</td></tr>
+      <tr><td>48-49</td><td colspan="2">Доспех +3 (кольчужная рубаха)</td></tr>
+      <tr><td>50-51</td><td colspan="2">Плащ невидимости</td></tr>
+      <tr><td>52-53</td><td colspan="2">Хрустальный шар  (легендарная версия)</td></tr>
+      <tr><td>54-55</td><td colspan="2">Доспех +1 (полулаты)</td></tr>
+      <tr><td>56-57</td><td colspan="2">Железная фляга</td></tr>
+      <tr><td>58-59</td><td colspan="2">Доспех +3 (кожаный)</td></tr>
+      <tr><td>60-61</td><td colspan="2">Доспех +1 (латы)</td></tr>
+      <tr><td>62-63</td><td colspan="2">Мантия архимага</td></tr>
+      <tr><td>64-65</td><td colspan="2">Жезл воскрешения</td></tr>
+      <tr><td>66-67</td><td colspan="2">Доспех +1 (чешуйчатый)</td></tr>
+      <tr><td>68-69</td><td colspan="2">Скарабей защиты</td></tr>
+      <tr><td>70-71</td><td colspan="2">Доспех +2 (наборный)</td></tr>
+      <tr><td>72-73</td><td colspan="2">Доспех +2 (проклёпанная кожа)</td></tr>
+      <tr><td>74-75</td><td colspan="2">Колодец многих миров</td></tr>
+      <tr><td>76</td><td colspan="2">магический доспех (брось к12)</td></tr>
+      <tr><td></td><td>1-2</td><td>Доспех +2 (полулаты)</td></tr>
+      <tr><td></td><td>3-4</td><td>Доспех +2 (латы)</td></tr>
+      <tr><td></td><td>5-6</td><td>Доспех +3 (проклёпанная кожа)</td></tr>
+      <tr><td></td><td>7-8</td><td>Доспех +3 (кираса)</td></tr>
+      <tr><td></td><td>9-10</td><td>Доспех +3 (наборный)</td></tr>
+      <tr><td></td><td>11</td><td>Доспех +3 (полулаты)</td></tr>
+      <tr><td></td><td>12</td><td>Доспех +3 (латы)</td></tr>
+      <tr><td>77</td><td colspan="2">Аппарат Квалиша</td></tr>
+      <tr><td>78</td><td colspan="2">Доспех неуязвимости</td></tr>
+      <tr><td>79</td><td colspan="2">Пояс силы великана (штормовой)</td></tr>
+      <tr><td>80</td><td colspan="2">Куб врат</td></tr>
+      <tr><td>81</td><td colspan="2">Колода многих вещей</td></tr>
+      <tr><td>82</td><td colspan="2">Кольчуга ифритов</td></tr>
+      <tr><td>83</td><td colspan="2">Доспех сопротивления (полулаты)</td></tr>
+      <tr><td>84</td><td colspan="2">Рог Валгаллы (железный)</td></tr>
+      <tr><td>85</td><td colspan="2">Инструмент бардов  (арфа Оллава)</td></tr>
+      <tr><td>86</td><td colspan="2">Камень Йоун (большое поглощение)</td></tr>
+      <tr><td>87</td><td colspan="2">Камень Йоун (мастерство)</td></tr>
+      <tr><td>88</td><td colspan="2">Камень Йоун (регенерация)</td></tr>
+      <tr><td>89</td><td colspan="2">Латный доспех эфирности</td></tr>
+      <tr><td>90</td><td colspan="2">Доспех сопротивления (латы)</td></tr>
+      <tr><td>91</td><td colspan="2">Кольцо командования воздушными элементалями</td></tr>
+      <tr><td>92</td><td colspan="2">Кольцо командования земляными элементалями</td></tr>
+      <tr><td>93</td><td colspan="2">Кольцо командования огненными элементалями</td></tr>
+      <tr><td>94</td><td colspan="2">Кольцо трёх желаний</td></tr>
+      <tr><td>95</td><td colspan="2">Кольцо командования водяными элементалями</td></tr>
+      <tr><td>96</td><td colspan="2">Сфера аннигиляции</td></tr>
+      <tr><td>97</td><td colspan="2">Талисман чистого добра</td></tr>
+      <tr><td>98</td><td colspan="2">Талисман сферы</td></tr>
+      <tr><td>99</td><td colspan="2">Талисман абсолютного зла</td></tr>
+      <tr><td>00</td><td colspan="2">Том молчаливого языка</td></tr>
+      </tbody></table></div>
+<div><h3>Магические предметы, таблица Е</h3><br>
+      <table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-15</td><td>Оружие +1</td></tr>
+      <tr><td>16-18</td><td>Щит +1</td></tr>
+      <tr><td>19-21</td><td>Щит часового</td></tr>
+      <tr><td>22-23</td><td>Амулет защиты от обнаружения и поиска</td></tr>
+      <tr><td>24-25</td><td>Эльфийские сапоги</td></tr>
+      <tr><td>26-27</td><td>Сапоги ходьбы и прыжков</td></tr>
+      <tr><td>28-29</td><td>Наручи стрельбы из лука</td></tr>
+      <tr><td>30-31</td><td>Брошь защиты</td></tr>
+      <tr><td>32-33</td><td>Помело полёта</td></tr>
+      <tr><td>34-35</td><td>Эльфийский плащ</td></tr>
+      <tr><td>36-37</td><td>Плащ защиты</td></tr>
+      <tr><td>38-39</td><td>Рукавицы силы огра</td></tr>
+      <tr><td>40-41</td><td>Шапка маскировки</td></tr>
+      <tr><td>42-43</td><td>Метательное копьё молнии</td></tr>
+      <tr><td>44-45</td><td>Жемчужина силы</td></tr>
+      <tr><td>46-47</td><td>Жезл хранителя договора +1</td></tr>
+      <tr><td>48-49</td><td>Туфли паука</td></tr>
+      <tr><td>50-51</td><td>Посох гадюки</td></tr>
+      <tr><td>52-53</td><td>Посох питона</td></tr>
+      <tr><td>54-55</td><td>Меч мести</td></tr>
+      <tr><td>56-57</td><td>Трезубец командования рыбами</td></tr>
+      <tr><td>58-59</td><td>Волшебная палочка снарядов</td></tr>
+      <tr><td>60-61</td><td>Волшебная палочка боевого мага +1</td></tr>
+      <tr><td>62-63</td><td>Волшебная палочка паутины</td></tr>
+      <tr><td>64-65</td><td>Оружие предупреждения</td></tr>
+      <tr><td>66</td><td>Адамантиновый доспех (кольчуга)</td></tr>
+      <tr><td>67</td><td>Адамантиновый доспех (кольчужная рубаха)</td></tr>
+      <tr><td>68</td><td>Адамантиновый доспех (чешуйчатый)</td></tr>
+      <tr><td>69</td><td>Сумка фокусов (серая)</td></tr>
+      <tr><td>70</td><td>Сумка фокусов (рыжая)</td></tr>
+      <tr><td>71</td><td>Сумка фокусов (коричневая)</td></tr>
+      <tr><td>72</td><td>Заполярные сапоги</td></tr>
+      <tr><td>73</td><td>Обруч сжигания</td></tr>
+      <tr><td>74</td><td>Колода иллюзий</td></tr>
+      <tr><td>75</td><td>Вечнодымящаяся бутылка</td></tr>
+      <tr><td>76</td><td>Очки очарования</td></tr>
+      <tr><td>77</td><td>Очки орлиного зрения</td></tr>
+      <tr><td>78</td><td>Статуэтка чудесной силы (серебряный ворон)</td></tr>
+      <tr><td>79</td><td>Камень сияния</td></tr>
+      <tr><td>80</td><td>Перчатки ловли снарядов</td></tr>
+      <tr><td>81</td><td>Перчатки плавания и лазания</td></tr>
+      <tr><td>82</td><td>Перчатки воровства</td></tr>
+      <tr><td>83</td><td>Повязка интеллекта</td></tr>
+      <tr><td>84</td><td>Шлем телепатии</td></tr>
+      <tr><td>85</td><td>Инструмент бардов  (лютня Досс)</td></tr>
+      <tr><td>86</td><td>Инструмент бардов  (бандура Фоклучан)</td></tr>
+      <tr><td>87</td><td>Инструмент бардов  (цитра Мак-Фуирми)</td></tr>
+      <tr><td>88</td><td>Медальон мыслей</td></tr>
+      <tr><td>89</td><td>Ожерелье адаптации</td></tr>
+      <tr><td>90</td><td>Медальон затягивающихся ран</td></tr>
+      <tr><td>91</td><td>Свирель ужаса</td></tr>
+      <tr><td>92</td><td>Свирель канализации</td></tr>
+      <tr><td>93</td><td>Кольцо прыжков</td></tr>
+      <tr><td>94</td><td>Кольцо защиты разума</td></tr>
+      <tr><td>95</td><td>Кольцо тепла</td></tr>
+      <tr><td>96</td><td>Кольцо хождения по воде</td></tr>
+      <tr><td>97</td><td>Колчан Элонны</td></tr>
+      <tr><td>98</td><td>Камень удачи</td></tr>
+      <tr><td>99</td><td>Веер ветра</td></tr>
+      <tr><td>00</td><td>Крылатые сапоги</td></tr>
+      </tbody></table>
+</div>
+</div>
+<br>
+<div class="a3b">
+<div><h3>Магические предметы, таблица Ё</h3><br>
+      <table rules="groups" class="a3b1">
+      <tbody><tr><td colspan="2" align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-11</td><td colspan="2">Оружие +2</td></tr>
+      <tr><td>12-14</td><td colspan="2">Статуэтка чудесной силы (брось к8)</td></tr>
+      <tr><td></td><td>1</td><td>Бронзовый грифон</td></tr>
+      <tr><td></td><td>2</td><td>Эбеновая муха</td></tr>
+      <tr><td></td><td>3</td><td>Золотые львы</td></tr>
+      <tr><td></td><td>4</td><td>Костяные козлы</td></tr>
+      <tr><td></td><td>5</td><td>Мраморный слон</td></tr>
+      <tr><td></td><td>6-7</td><td>Ониксовая собака</td></tr>
+      <tr><td></td><td>8</td><td>Серпентиновая сова</td></tr>
+      <tr><td>15</td><td colspan="2">Адамантиновый доспех (кираса)</td></tr>
+      <tr><td>16</td><td colspan="2">Адамантиновый доспех (наборный)</td></tr>
+      <tr><td>17</td><td colspan="2">Амулет здоровья</td></tr>
+      <tr><td>18</td><td colspan="2">Доспех уязвимости</td></tr>
+      <tr><td>19</td><td colspan="2">Ловящий стрелы щит</td></tr>
+      <tr><td>20</td><td colspan="2">Пояс дварфов</td></tr>
+      <tr><td>21</td><td colspan="2">Пояс силы холмового великана</td></tr>
+      <tr><td>22</td><td colspan="2">Топор берсерка</td></tr>
+      <tr><td>23</td><td colspan="2">Сапоги левитации</td></tr>
+      <tr><td>24</td><td colspan="2">Сапоги скорости</td></tr>
+      <tr><td>25</td><td colspan="2">Чаша командования водяными элементалями</td></tr>
+      <tr><td>26</td><td colspan="2">Наручи защиты</td></tr>
+      <tr><td>27</td><td colspan="2">Жаровня командования огненными элементалями</td></tr>
+      <tr><td>28</td><td colspan="2">Плащ шарлатана</td></tr>
+      <tr><td>29</td><td colspan="2">Кадило контролирования воздушных элементалей</td></tr>
+      <tr><td>30</td><td colspan="2">Доспех +1 (кольчуга)</td></tr>
+      <tr><td>31</td><td colspan="2">Доспех сопротивления (кольчуга)</td></tr>
+      <tr><td>32</td><td colspan="2">Доспех +1 (кольчужная рубаха)</td></tr>
+      <tr><td>33</td><td colspan="2">Доспех сопротивления (кольчужная рубаха)</td></tr>
+      <tr><td>34</td><td colspan="2">Плащ ускользания</td></tr>
+      <tr><td>35</td><td colspan="2">Плащ летучей мыши</td></tr>
+      <tr><td>36</td><td colspan="2">Куб силового поля</td></tr>
+      <tr><td>37</td><td colspan="2">Мгновенная крепость Даэрна</td></tr>
+      <tr><td>38</td><td colspan="2">Кинжал яда</td></tr>
+      <tr><td>39</td><td colspan="2">Оковы измерений</td></tr>
+      <tr><td>40</td><td colspan="2">Убийца драконов</td></tr>
+      <tr><td>41</td><td colspan="2">Эльфийская кольчуга</td></tr>
+      <tr><td>42</td><td colspan="2">Язык пламени</td></tr>
+      <tr><td>43</td><td colspan="2">Камень зрения</td></tr>
+      <tr><td>44</td><td colspan="2">Убийца великанов</td></tr>
+      <tr><td>45</td><td colspan="2">Красивый проклёпанный кожаный доспех</td></tr>
+      <tr><td>46</td><td colspan="2">Шлем телепортации</td></tr>
+      <tr><td>47</td><td colspan="2">Рог взрыва</td></tr>
+      <tr><td>48</td><td colspan="2">Рог Валгаллы (серебряный или латунный)</td></tr>
+      <tr><td>49</td><td colspan="2">Инструмент бардов  (мандолина Канаит)</td></tr>
+      <tr><td>50</td><td colspan="2">Инструмент бардов  (лира Кли)</td></tr>
+      <tr><td>51</td><td colspan="2">Камень Йоун (восприятие)</td></tr>
+      <tr><td>52</td><td colspan="2">Камень Йоун (защита)</td></tr>
+      <tr><td>53</td><td colspan="2">Камень Йоун (резерв)</td></tr>
+      <tr><td>54</td><td colspan="2">Камень Йоун (питание)</td></tr>
+      <tr><td>55</td><td colspan="2">Железные ленты Биларро</td></tr>
+      <tr><td>56</td><td colspan="2">Доспех +1 (кожаный)</td></tr>
+      <tr><td>57</td><td colspan="2">Доспех сопротивления (кожаный)</td></tr>
+      <tr><td>58</td><td colspan="2">Булава распада</td></tr>
+      <tr><td>59</td><td colspan="2">Булава кары</td></tr>
+      <tr><td>60</td><td colspan="2">Булава ужаса</td></tr>
+      <tr><td>61</td><td colspan="2">Мантия сопротивления заклинаниям</td></tr>
+      <tr><td>62</td><td colspan="2">Ожерелье молитвенных чёток</td></tr>
+      <tr><td>63</td><td colspan="2">Медальон защиты от яда</td></tr>
+      <tr><td>64</td><td colspan="2">Кольцо влияния на животных</td></tr>
+      <tr><td>65</td><td colspan="2">Кольцо уклонения</td></tr>
+      <tr><td>66</td><td colspan="2">Кольцо падения пёрышком</td></tr>
+      <tr><td>67</td><td colspan="2">Кольцо свободных действий</td></tr>
+      <tr><td>68</td><td colspan="2">Кольцо защиты</td></tr>
+      <tr><td>69</td><td colspan="2">Кольцо сопротивления</td></tr>
+      <tr><td>70</td><td colspan="2">Кольцо хранения заклинаний</td></tr>
+      <tr><td>71</td><td colspan="2">Кольцо тарана</td></tr>
+      <tr><td>72</td><td colspan="2">Кольцо проникающего зрения</td></tr>
+      <tr><td>73</td><td colspan="2">Мантия глаз</td></tr>
+      <tr><td>74</td><td colspan="2">Жезл правления</td></tr>
+      <tr><td>75</td><td colspan="2">Жезл хранителя договора +2</td></tr>
+      <tr><td>76</td><td colspan="2">Верёвка опутывания</td></tr>
+      <tr><td>77</td><td colspan="2">Доспех +1 (чешуйчатый)</td></tr>
+      <tr><td>78</td><td colspan="2">Доспех сопротивления (чешуйчатый)</td></tr>
+      <tr><td>79</td><td colspan="2">Щит +2</td></tr>
+      <tr><td>80</td><td colspan="2">Щит притягивания снарядов</td></tr>
+      <tr><td>81</td><td colspan="2">Посох очарования</td></tr>
+      <tr><td>82</td><td colspan="2">Посох лечения</td></tr>
+      <tr><td>83</td><td colspan="2">Посох роя насекомых</td></tr>
+      <tr><td>84</td><td colspan="2">Посох леса</td></tr>
+      <tr><td>85</td><td colspan="2">Посох иссушения</td></tr>
+      <tr><td>86</td><td colspan="2">Камень контролирования земляных элементалей</td></tr>
+      <tr><td>87</td><td colspan="2">Солнечный клинок</td></tr>
+      <tr><td>88</td><td colspan="2">Меч кражи жизни</td></tr>
+      <tr><td>89</td><td colspan="2">Меч ранения</td></tr>
+      <tr><td>90</td><td colspan="2">Жезл щупалец</td></tr>
+      <tr><td>91</td><td colspan="2">Жестокое оружие</td></tr>
+      <tr><td>92</td><td colspan="2">Волшебная палочка сковывания</td></tr>
+      <tr><td>93</td><td colspan="2">Волшебная палочка обнаружения врагов</td></tr>
+      <tr><td>94</td><td colspan="2">Волшебная палочка страха</td></tr>
+      <tr><td>95</td><td colspan="2">Волшебная палочка огненных шаров</td></tr>
+      <tr><td>96</td><td colspan="2">Волшебная палочка молний</td></tr>
+      <tr><td>97</td><td colspan="2">Волшебная палочка паралича</td></tr>
+      <tr><td>98</td><td colspan="2">Волшебная палочка боевого мага +2</td></tr>
+      <tr><td>99</td><td colspan="2">Волшебная палочка чудес</td></tr>
+      <tr><td>00</td><td colspan="2">Крылья полёта</td></tr>
+      </tbody></table></div>
+<div><h3>Магические предметы, таблица Ж</h3><br>
+      <table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-10</td><td>Оружие +3</td></tr>
+      <tr><td>11-12</td><td>Амулет планов</td></tr>
+      <tr><td>13-14</td><td>Ковёр-самолёт</td></tr>
+      <tr><td>15-16</td><td>Хрустальный шар  (очень редкая версия)</td></tr>
+      <tr><td>17-18</td><td>Кольцо регенерации</td></tr>
+      <tr><td>19-20</td><td>Кольцо падающих звёзд</td></tr>
+      <tr><td>21-22</td><td>Кольцо телекинеза</td></tr>
+      <tr><td>23-24</td><td>Мантия сияющих цветов</td></tr>
+      <tr><td>25-26</td><td>Мантия звёзд</td></tr>
+      <tr><td>27-28</td><td>Жезл поглощения</td></tr>
+      <tr><td>29-30</td><td>Жезл бдительности</td></tr>
+      <tr><td>31-32</td><td>Жезл безопасности</td></tr>
+      <tr><td>33-34</td><td>Жезл хранителя договора +3</td></tr>
+      <tr><td>35-36</td><td>Скимитар скорости</td></tr>
+      <tr><td>37-38</td><td>Щит +3</td></tr>
+      <tr><td>39-40</td><td>Посох огня</td></tr>
+      <tr><td>41-42</td><td>Посох мороза</td></tr>
+      <tr><td>43-44</td><td>Посох силы</td></tr>
+      <tr><td>45-46</td><td>Посох ударов</td></tr>
+      <tr><td>47-48</td><td>Посох грома и молнии</td></tr>
+      <tr><td>49-50</td><td>Меч остроты</td></tr>
+      <tr><td>51-52</td><td>Волшебная палочка превращения</td></tr>
+      <tr><td>53-54</td><td>Волшебная палочка боевого мага +3</td></tr>
+      <tr><td>55</td><td>Адамантиновый доспех (полулаты)</td></tr>
+      <tr><td>56</td><td>Адамантиновый доспех (латы)</td></tr>
+      <tr><td>57</td><td>Живой щит</td></tr>
+      <tr><td>58</td><td>Пояс силы огненного великана</td></tr>
+      <tr><td>59</td><td>Пояс силы ледяного великана (или каменного)</td></tr>
+      <tr><td>60</td><td>Доспех +1 (кираса)</td></tr>
+      <tr><td>61</td><td>Доспех сопротивления (кираса)</td></tr>
+      <tr><td>62</td><td>Свеча мольбы</td></tr>
+      <tr><td>63</td><td>Доспех +2 (кольчуга)</td></tr>
+      <tr><td>64</td><td>Доспех +2 (кольчужная рубаха)</td></tr>
+      <tr><td>65</td><td>Плащ паука</td></tr>
+      <tr><td>66</td><td>Танцующий меч</td></tr>
+      <tr><td>67</td><td>Демонический доспех</td></tr>
+      <tr><td>68</td><td>Доспех из драконьей чешуи</td></tr>
+      <tr><td>69</td><td>Латы дварфов</td></tr>
+      <tr><td>70</td><td>Дварфский метатель</td></tr>
+      <tr><td>71</td><td>Бутылка с ифритом</td></tr>
+      <tr><td>72</td><td>Статуэтка чудесной силы (обсидиановый скакун)</td></tr>
+      <tr><td>73</td><td>Морозный клинок</td></tr>
+      <tr><td>74</td><td>Шлем блеска</td></tr>
+      <tr><td>75</td><td>Рог Валгаллы (бронзовый)</td></tr>
+      <tr><td>76</td><td>Инструмент бардов  (арфа Анструт)</td></tr>
+      <tr><td>77</td><td>Камень Йоун (поглощение)</td></tr>
+      <tr><td>78</td><td>Камень Йоун (проворство)</td></tr>
+      <tr><td>79</td><td>Камень Йоун (стойкость)</td></tr>
+      <tr><td>80</td><td>Камень Йоун (проницательность)</td></tr>
+      <tr><td>81</td><td>Камень Йоун (рассудок)</td></tr>
+      <tr><td>82</td><td>Камень Йоун (лидерство)</td></tr>
+      <tr><td>83</td><td>Камень Йоун (сила)</td></tr>
+      <tr><td>84</td><td>Доспех +2 (кожаный)</td></tr>
+      <tr><td>85</td><td>Справочник телесного здоровья</td></tr>
+      <tr><td>86</td><td>Справочник полезных упражнений</td></tr>
+      <tr><td>87</td><td>Справочник по големам</td></tr>
+      <tr><td>88</td><td>Справочник быстроты действий</td></tr>
+      <tr><td>89</td><td>Зеркало похищения жизни</td></tr>
+      <tr><td>90</td><td>Вор девяти жизней</td></tr>
+      <tr><td>91</td><td>Лук клятвы</td></tr>
+      <tr><td>92</td><td>Доспех +2 (чешуйчатый)</td></tr>
+      <tr><td>93</td><td>Щит от заклинаний</td></tr>
+      <tr><td>94</td><td>Доспех +1 (наборный)</td></tr>
+      <tr><td>95</td><td>Доспех сопротивления (наборный)</td></tr>
+      <tr><td>96</td><td>Доспех +1 (проклёпанный кожаный)</td></tr>
+      <tr><td>97</td><td>Доспех сопротивления (проклёпанный кожаный)</td></tr>
+      <tr><td>98</td><td>Том чистых мыслей</td></tr>
+      <tr><td>99</td><td>Том лидерства и влияния</td></tr>
+      <tr><td>00</td><td>Том понимания</td></tr>
+      </tbody></table><br>
+      <h3>Магические предметы, таблица З</h3><br>
+      <table rules="groups" class="a3b1">
+      <tbody><tr><td align="center"><b>к100</b></td><td align="center"><b>Магический предмет</b></td></tr>
+      <tr><td>01-20</td><td>Зелье превосходного лечения</td></tr>
+      <tr><td>21-30</td><td>Зелье невидимости</td></tr>
+      <tr><td>31-40</td><td>Зелье скорости</td></tr>
+      <tr><td>41-50</td><td>Свиток заклинания (6 уровень)</td></tr>
+      <tr><td>51-57</td><td>Свиток заклинания (7 уровень)</td></tr>
+      <tr><td>58-62</td><td>Боеприпасы +3</td></tr>
+      <tr><td>63-67</td><td>Масло остроты</td></tr>
+      <tr><td>68-72</td><td>Зелье полёта</td></tr>
+      <tr><td>73-77</td><td>Зелье силы облачного великана</td></tr>
+      <tr><td>78-82</td><td>Зелье долголетия</td></tr>
+      <tr><td>83-87</td><td>Зелье живучести</td></tr>
+      <tr><td>88-92</td><td>Свиток заклинания (8 уровень)</td></tr>
+      <tr><td>93-95</td><td>Подковы ветра</td></tr>
+      <tr><td>96-98</td><td>Чудесные краски Нолзура</td></tr>
+      <tr><td>99</td><td>Сумка пожирания</td></tr>
+      <tr><td>00</td><td>Переносная дыра</td></tr>
+      </tbody></table>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+   </body>
+    </html>
