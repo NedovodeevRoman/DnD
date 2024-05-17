@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">
+    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/14.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 120%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;  
+            font-size: 1vw;           
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+/*Менюшки*/
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.2%;
+      width: 98%;
+      height: 5%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+.a31 h1 {
+      position: absolute;
+      left: 2%;
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 5.4%;
+      width: 98%;
+      height: 94.5%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a32 a{position: absolute;
+      left: 1%;
+      right: 1%;
+      font-size: 1vw;
+}
+
+.a3b1 {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+}
+
+.a32 td {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+}
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png" width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+        <div class="a31"><h1>Полурослик</h1></div>
+        <div class="a32">
+<a><b>Источник:</b> «Player's handbook»<br>
+<br>
+Целью большинства полуросликов является домашний уют. Место, где можно поселиться в покое и тишине, подальше от мародёрствующих чудовищ и сражающихся армий. Огонь очага, сытная пища, добрая выпивка и добрая беседа. Хотя некоторые полурослики проживают свой век в удалённых сельских общинах, другие сбиваются в постоянно кочующие общины, влекомые открытыми дорогами, широкими горизонтами и возможностью открыть чудеса новых мест и новых людей. Но даже такие кочевники любят покой, вкусную еду, свой очаг и свой дом, даже если это повозка, трясущаяся по пыльной дороге или плот, плывущий по течению реки.<br>
+<br>
+<h3>МАЛЕНЬКИЕ И ПРАКТИЧНЫЕ</h3><hr width="98%" color="#000"><br>
+Крошечные полурослики выживают в мире, полном более крупных существ, стараясь избегать внимания, а если это оказывается невозможным, то избегая враждебности. Имея рост около 3 футов (90 сантиметров), они кажутся относительно безвредными, и благодаря этому успешно существуют столетиями, оставаясь в тени империй, войн и политической борьбы. Они склонны к полноте, и весят от 40 до 45 фунтов (от 18 до 20 килограмм).
+
+Кожа у полуросликов встречается от смуглой до бледной, с румянцем. Волосы обычно коричневые или рыже-коричневые, вьющиеся. Глаза полуросликов карие или ореховые. Мужчины часто отпускают длинные бакенбарды, но бороды носят редко, а усы тем более. Они любят носить простую, удобную одежду, предпочитая яркие цвета. Практичность полуросликов распространяется не только на их одежду. Они довольствуются удовлетворением основных потребностей и простых радостей, уделяя совсем мало внимания роскоши. Даже богатейшие из них предпочитают хранить своё добро в закрытых сундуках и подвалах, а не выставлять его на всеобщее обозрение. Полурослики умеют находить простые решения своих проблем, и являются весьма решительными.
+
+
+<h3>ДОБРЫЕ И ЛЮБОПЫТНЫЕ</h3><hr width="98%" color="#000"><br>
+Полурослики — приветливый и дружелюбный народ. Они ценят дружбу и родственные связи так же как собственный дом и очаг, лишь в тайне мечтая о золоте и славе. И даже те из них, кто стали искателями приключений, обычно отправляются в путь, преследуя цели дружбы или общества, тяги к переменам или любопытства. Они любят открывать для себя что-то новое, даже если это совсем простые вещи, вроде экзотической еды или незнакомого стиля одежды.<br>
+<br>
+Полурослики легко поддаются жалости, и не выносят вида чужих страданий. Они щедры, и с радостью делятся тем, что имеют, даже в трудные времена.<br>
+<br>
+
+<h3>ЕДИНЫЕ С ТОЛПОЙ</h3><hr width="98%" color="#000"><br>
+Полурослики легко вливаются в сообщества людей, дварфов или эльфов, где их ценят и всегда им рады. Сочетание их врождённых скрытности и скромности позволяют им легко избегать ненужного внимания.<br>
+<br>
+Полурослики охотно работают с другими, и они верны своим друзьям, вне зависимости от их вида. Однако, если кто-то из их друзей, семьи или общины оказывается под угрозой, они способны проявить удивительную свирепость.<br>
+<br>
+
+<h3>ПАСТОРАЛЬНЫЕ УДОВОЛЬСТВИЯ</h3><hr width="98%" color="#000"><br>
+Большинство полуросликов живёт в маленьких, мирных общинах с большими фермами, среди ухоженных рощ. Они редко создают собственные королевства, и не держат земель за пределами своих тихих владений. Они обычно не признают среди себя какого-либо рода знати или королевской власти, вместо этого прислушиваясь к семейным старейшинам, руководствуясь их мнением. Семьи сохраняют свой традиционный уклад, несмотря на подъёмы и падения империй.<br>
+<br>
+Множество полуросликов живёт среди других рас, где усердная работа и надёжные перспективы принесут им обильное вознаграждение и земные блага. Некоторые общины полуросликов ведут кочевой образ жизни, путешествуя на повозках или плавая на суднах от одного места к другому, не оседая на одном месте постоянно.<br>
+
+
+</a>
+      </div>
+    </div>
+
+   </body>
+    </html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">
+    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/19.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+            align-content: center;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 140%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000; 
+            font-size: 1vw;            
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.8%;
+      width: 98%;
+      height: 4.6%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;   
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+.a31 h1 {
+      position: absolute;
+      left: 2%;
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 6.1%;
+      width: 98%;
+      height: 93%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a32 a{position: absolute;
+      left: 1%;
+      right: 1%;
+      font-size: 1vw;
+}
+
+.a3b1 {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+      font-size: 1vw;
+
+}
+
+.a32 td {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+}
+
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png"  width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+            <div class="a31"><h1>Правила</h1></div>
+            <div class="a32">
+<a><b>Источник:</b> «Tasha's Cauldron of Everything»<br>
+<br>
+<h3>1. МАСТЕР ВЫНОСИТ ОКОНЧАТЕЛЬНОЕ РЕШЕНИЕ ПО ИСПОЛЬЗОВАНИЮ ПРАВИЛ</h3>
+Правила D&D охватывают множество нюансов и деталей, которые существуют в игре, но возможности настолько обширны,
+что правила просто не способны учесть всё. Когда вы сталкиваетесь с чем-то, что не описано в правилах, или вы не
+уверены, как их правильно интерпретировать, Мастер решает, как действовать, принимая такое решение, что принесет
+наибольшее удовольствие вашей группе.<br>
+<br>
+
+<h3>2. ЧАСТНОЕ ПРЕВЫШЕ ОБЩЕГО</h3>
+Каждую часть игры регулируют общие правила. Например, правила, описывающие бой, указывают вам, что рукопашные
+атаки оружием используют Силу, а дальнобойные атаки оружием используют Ловкость. Это общее правило, и общее
+правило действует до тех пор, пока что-то в игре явно не говорит об обратном.<br>
+<br>
+Игра также включает в себя элементы, которые иногда противоречат общим правилам, такие как классовые умения,
+заклинания, магические предметы, умения и особенности монстров и тому подобное. Когда исключение и общее правило
+противоречат друг другу, исключение имеет приоритет. Например, если особенность гласит, что вы можете совершить
+рукопашную атаку оружием, используя свою Харизму, вы можете так поступить, даже если это утверждение противоречит
+общему правилу.<br>
+<br>
+
+<h3>3. ПРЕИМУЩЕСТВА И ПОМЕХИ</h3>
+Даже если несколько факторов позволяют вам совершить бросок с преимуществом или помехой, у вас всё равно есть
+только одна помеха или преимущество. Если у вас есть помеха и преимущество одновременно, то они отменяют друг
+друга.<br>
+<br>
+
+<h3>4. ВРЕМЯ СРАБАТЫВАНИЯ РЕАКЦИИ</h3>
+Некоторые правила игры позволяют вам предпринять специальное действие, называемое «реакцией», в ответ на
+какое-то событие. Совершение провоцированных атак и накладывание заклинания щит [shield] — два типичных
+использования реакций. Если вы не уверены, в какое время по отношению к триггеру происходит реакция, вот
+правило: реакция происходит после срабатывания триггера, если только описание реакции явно не говорит
+об обратном. Если вы совершаете реакцию, вы не можете совершить ещё одну до начала вашего следующего хода.<br>
+<br>
+
+<h3>5. БОНУС МАСТЕРСТВА</h3>
+Если ваш бонус мастерства применяется к броску, вы можете добавить этот бонус только один раз, даже если
+несколько обстоятельств в игре говорят о применении бонуса. Более того, если более чем одно обстоятельство
+говорит вам удвоить или уменьшить ваш бонус вдвое, вы увеличиваете или уменьшаете его только один раз перед
+применением. Независимо от того, умножаете ли вы бонус, делите или оставляете без изменения, его можно
+использовать только один раз за бросок.<br>
+<br>
+
+<h3>6. ЗАКЛИНАНИЯ, НАКЛАДЫВАЕМЫЕ БОНУСНЫМ ДЕЙСТВИЕМ</h3>
+Если вы хотите наложить заклинание со временем накладывания в одно бонусное действие, помните, что вы не можете
+накладывать никакие другие заклинания до или после него в этот ход, за исключением заговоров со временем
+накладывания в «1 действие».<br>
+<br>
+
+<h3>7. КОНЦЕНТРАЦИЯ</h3>
+Как только вы начинаете накладывать заклинание или использовать особое умение, требующее концентрации, ваша
+концентрация на другом эффекте тут же прекращается.<br>
+<br>
+
+<h3>8. ВРЕМЕННЫЕ ХИТЫ</h3>
+Временные хиты не накапливаются. Если у вас уже есть временные хиты, и вы получаете дополнительно ещё, то они
+не складываются вместе, кроме тех случаев, когда какая-то игровая особенность явно говорит об этом. Вместо
+этого вы выбираете, какие временные хиты оставить.<br>
+<br>
+
+<h3>9. ОКРУГЛЕНИЕ В МЕНЬШУЮ СТОРОНУ</h3>
+Всякий раз, когда вы делите или умножаете число в игре и получаете дробное число, округляйте его в меньшую
+сторону, даже если дробная часть составляет половину или больше.<br>
+<br>
+
+
+<h3>10. ПОЛУЧАЙТЕ УДОВОЛЬСТВИЕ</h3>
+Вам не нужно знать наизусть каждое правило, чтобы наслаждаться D&D — у каждой группы свой собственный стиль.
+Во всех группах есть разные способы рассказа историй и использования правил. Уделите внимание тому, что ваша
+группа любит больше всего. Короче говоря, получайте удовольствие!<br>
+</a>
+</div>
+ </div>
+</div>
+</body>
+</html>  
