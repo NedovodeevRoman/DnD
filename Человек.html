@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">
+    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/14.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 156%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;  
+            font-size: 1vw;           
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+/*Менюшки*/
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.2%;
+      width: 98%;
+      height: 4%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+.a31 h1 {
+      position: absolute;
+      left: 2%;
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 4.4%;
+      width: 98%;
+      height: 94.5%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a32 a{position: absolute;
+      left: 1%;
+      right: 1%;
+      font-size: 1vw;
+}
+
+.a3b1 {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+}
+
+.a32 td {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+}
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png" width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+        <div class="a31"><h1>Человек</h1></div>
+        <div class="a32">
+<a><b>Источник:</b> «Player's handbook»<br>
+<br>
+В большинстве миров люди — это самая молодая из распространённых рас. Они поздно вышли на мировую сцену и живут намного меньше, чем дварфы, эльфы и драконы. Возможно, именно краткость их жизней заставляет их стремиться достигнуть как можно большего в отведённый им срок. А быть может, они хотят что-то доказать старшим расам, и поэтому создают могучие империи, основанные на завоеваниях и торговле. Что бы ни двигало ими, люди всегда были инноваторами и пионерами во всех мирах.<br>
+<br>
+<h3>МНОГОЛИКИЕ</h3><hr width="98%" color="#000"><br>
+Со своей склонностью к миграции и завоеваниям, люди более разнообразны физически, чем другие распространенные расы. Не существует типичной внешности человека. Рост отдельного представителя может составлять от 5 до 6 футов (от 152 до 184 сантиметров), а вес — от 125 до 250 фунтов (от 60 до 112 килограмм). Оттенок кожи у людей варьируется от почти чёрного до очень бледного, а волосы — от чёрного до светлого тонов (волнистые, кудрявые или прямые); мужчины могут носить волосы на лице, густые или редкие. Многие люди имеют примесь нечеловеческой крови, выдающей черты эльфа, орка, или предков другого происхождения. Люди достигают совершеннолетия около двадцати лет, и редко проживают одно столетие.<br>
+<br>
+
+<h3>РАЗНООБРАЗИЕ ВО ВСЁМ</h3><hr width="98%" color="#000"><br>
+Люди являются самыми приспособленным и амбициозным народом среди распространённых рас. Их вкусы, нравы и обычаи сильно отличаются во множестве разных земель, где они поселились. Однако там, где они селятся, они остаются надолго: строят города, стоящие веками, и великие королевства, сохраняющиеся множество столетий. У отдельного человека может быть относительно короткая продолжительность жизни, но человеческая нация и культура сохраняет традиции от своих истоков на время, намного превышающее память одного человека. Они живут сегодняшним днём, что весьма хорошо подходит для приключенческой жизни, и позволяет вдобавок строить планы на будущее, со стремлением оставить после себя прочное наследие. Индивидуально или в группах, люди легко приспосабливаются к ситуации, и всегда остаются внимательными к изменяющейся политической и социальной динамике.<br>
+<br>
+
+<h3>ПРОЧНЫЕ ИНСТИТУТЫ</h3><hr width="98%" color="#000"><br>
+Там, где один эльф или дварф могут взять ответственность за охрану особого места или великой тайны, человек создаёт священные порядки и институты. В то время как кланы дварфов и старейшины полуросликов передают свои традиции новым поколениям, человеческие храмы, государства, библиотеки и своды законов запечатлевают их традиции в анналах истории. Люди мечтают о бессмертии, но (за исключением тех, кто становится нежитью или достигает божественного восхождения, чтобы избежать оков смерти) достигают его, когда продолжают жить в памяти, после смерти. Хотя некоторые люди могут быть ксенофобами, в целом их общество очень смешано. На землях людей обитает большое количество нечеловеческих рас, по сравнению с количеством людей, живущих на землях нелюдей.<br>
+<br>
+
+<h3>ВОПЛОЩЕНИЕ АМБИЦИЙ</h3><hr width="98%" color="#000"><br>
+Люди, ищущие приключений, являются самыми смелыми и амбициозными представителями смелой и амбициозной расы. Они стремятся заработать славу в глазах своих товарищей, накапливая власть, богатство и популярность. Более чем другие народы люди борются за цель, а не за расширение территорий или процветание отдельных фракций.<br>
+<br>
+<h3>ОСОБЕННОСТИ ЛЮДЕЙ</h3><hr width="98%" color="#000"><br>
+Сложно делать какие-либо обобщения относительно людей, но ваш персонаж-человек обладает следующими особенностями.<br>
+<br>
+Увеличение характеристик. Значение всех ваших характеристик увеличивается на 1.<br>
+<br>
+Возраст. Люди становятся взрослыми в районе 20 лет, и живут менее столетия.<br>
+<br>
+Мировоззрение. Любое.<br>
+<br>
+Размер. Люди сильно различаются по размерам. Некоторые с трудом достигают 5 футов (152 сантиметров) ростом, тогда как другие имеют рост, превосходящий 6 футов (183 сантиметра). Вне зависимости от роста, ваш размер — Средний.<br>
+<br>
+Скорость. Ваша базовая скорость ходьбы составляет 30 футов.<br>
+<br>
+Языки. Вы можете говорить, читать и писать на Общем и еще одном языке на ваш выбор. Люди обычно изучают языки народов, с которыми имеют дело, включая редкие диалекты. Они любят разбавлять собственную речь словами, позаимствованными из других языков: орочьими ругательствами, эльфийскими музыкальными терминами, дварфскими военными командами.<br>
+</a>
+      </div>
+    </div>
+
+   </body>
+    </html>
