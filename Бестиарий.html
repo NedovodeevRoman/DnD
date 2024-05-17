@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/24.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 550%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000; 
+            font-size: 1vw;            
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.2%;
+      width: 98%;
+      height: 1.2%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;   
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+.a31 h1 {
+      position: absolute;
+      left: 2%;
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 1.6%;
+      width: 98%;
+      height: 98.2%;
+      left: 1%;
+      right: 1%;
+      vertical-align: middle;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 0.2%;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a32 a{
+      position: relative;
+      left: 1%;
+      font-size: 1vw;
+}
+
+.a3b {
+      background-color: none;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a3b1 {
+      width: 50%;
+      height: 15%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      font-size: 1vw;
+
+}
+.a3b2{
+      width: 100%;
+      border-width: 1px;
+      border-color: #000;
+      border-style: solid;
+}
+
+.a3b3{
+      text-align: center;
+}
+
+.a32 td {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+      font-size: 1vw;
+
+}
+
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png" width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+            <div class="a31"><h1>Бестиарий</h1></div>
+            <div class="a32">
+                  <div class="a3b">
+                        <a><h3>Баллиста [Ballista]</h3><br>
+                              <i>Большой Объект</i><br>
+                              <b>Класс Доспеха</b> 15<br>
+                              <b>Хиты</b> 50<br>
+                              <b>Иммунитет к урону</b> психическая энергия, яд<br>
+                              <b>Источник:</b> «Dungeon master's guide»<br>
+                              <br>
+                              Баллиста это огромный арбалет, стреляющий тяжёлыми болтами. Прежде чем совершить<br>выстрел, её нужно зарядить и навести на цель. Требуется одно действие для зарядки, одно<br>
+                              действие для нацеливания и одно действие для выстрела.<br>
+                              <br>
+                              <h4>-ДЕЙСТВИЯ-</h4>
+                              <i><b>Болт.</b></i> <i>Дальнобойная атака оружием:</i> +6 к попаданию, дистанция 120/480 футов, одна цель.<br>
+                                    <i>Попадание:</i> 16 (3к10) колющего урона.</a>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Гигантская муха [Giant Fly]</h3><br>
+                              <i>Большой Зверь, без мировоззрения</i><br>
+                              <b>Класс Доспеха</b> 11<br>
+                              <b>Хиты</b> 19 (3к10 + 3)<br>
+                              <b>Скорость 30 футов,</b> летая <b>60 футов</b><br>
+                              <br>
+                              <div class="a3b1">
+                              <div class="a3b2">
+                                    <div class="a3b3"><b>СИЛ</b></div>
+                                    <div class="a3b3">14 (<b>+2</b>)</div>
+                              </div>
+                              <div class="a3b2">
+                                    <div class="a3b3"><b>ЛОВ</b></div>
+                                    <div class="a3b3">13 (<b>+1</b>)</div></div>
+                              <div class="a3b2">
+                                    <div class="a3b3"><b>ТЕЛ</b></div>
+                                    <div class="a3b3">13 (<b>+1</b>)</div></div>
+                              <div class="a3b2">
+                                    <div class="a3b3"><b>ИНТ</b></div>
+                                    <div class="a3b3">2 (<b>-4</b>)</div></div>
+                              <div class="a3b2">
+                                    <div class="a3b3"><b>МДР</b></div>
+                                    <div class="a3b3">10 (<b>+0</b>)</div></div>
+                              <div class="a3b2">
+                                    <div class="a3b3"><b>ХАР</b></div>
+                                    <div class="a3b3">3 (<b>-4</b>)</div></div>
+                              </div><br>
+                              <b>Чувства</b> тёмное зрение <b>60 футов,</b> пассивное Восприятие <b>10</b><br>
+                              <b>Опасность</b> 0 (0 или 10 опыта)<br>
+                              <b>Бонус мастерства +2</b><br>
+                              <b>Источник:</b> «Dungeon master's guide»
+                              </a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Ларва [Larva]</h3><br>
+                              <i>Среднее Исчадие, нейтрально-злое</i><br>
+                              <b>Класс Доспеха</b> 9<br>
+                              <b>Хиты</b> 9 (2к8)<br>
+                              <b>Скорость 20 футов</b><br>
+                              <br>
+                              <div class="a3b1">
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>СИЛ</b></div>
+                                          <div class="a3b3">9 (<b>-1</b>)</div>
+                                    </div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ЛОВ</b></div>
+                                          <div class="a3b3">9 (<b>-1</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ТЕЛ</b></div>
+                                          <div class="a3b3">10 (<b>+0</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ИНТ</b></div>
+                                          <div class="a3b3">6 (<b>-2</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>МДР</b></div>
+                                          <div class="a3b3">10 (<b>+0</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ХАР</b></div>
+                                          <div class="a3b3">2 (<b>-4</b>)</div></div>
+                                    </div><br>
+                                    <b>Чувства</b> пассивное Восприятие <b>10</b><br>
+                                    <b>Языки</b> понимает все, известные при жизни, но не говорит<br>
+                                    <b>Опасность</b> 0 (0 или 10 опыта)<br>
+                                    <b>Бонус мастерства +2</b><br>
+                                    <b>Источник:</b> «Dungeon master's guide»<br>
+                                    <br>
+                                    <h4>-ДЕЙСТВИЯ-</h4>
+                                    <i><b>Укус.</b></i> <i>Рукопашная атака оружием:</i> +1 к попаданию, досягаемость 5 футов, одна цель.<br>
+                                    <i>Попадание:</i> 1 (1к4 - 1) колющего урона.<br>
+                                    <br>
+                                    <h4>-ОПИСАНИЕ-</h4>
+                                    Ларва это жалкое исчадие, сохраняющее подобие своего прежнего лица, но с телом жирного<br>
+                                    червя. У ларвы остаются лишь призрачные воспоминания о предыдущей жизни, а все<br>
+                                    игровые параметры меняются на те, что прописаны в приведённом блоке статистики.<br>
+                                    <br>
+                                    На Гадесе ползает множество ларв. Ночные карги, личи и ракшасы собирают их, чтобы в<br>
+                                    дальнейшем использовать в мерзких ритуалах. Другим исчадиям нравится их просто есть.</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Мангонель [Mangonel]</h3><br>
+                           <i>Большой Объект</i><br>
+                           <b>Класс Доспеха</b> 15<br>
+                           <b>Хиты</b> 100<br>
+                           <b>Иммунитет к урону</b> психическая энергия, яд<br>
+                           <b>Источник:</b> «Dungeon master's guide»<br>
+                           Мангонель это разновидность онагра, мечущая тяжёлые снаряды по высокой дуге. Эти<br>
+                           снаряды могут попадать по целям, находящимся за укрытием. Прежде чем совершить<br>
+                           выстрел, мангонель нужно зарядить и навести на цель. Требуется два действия для зарядки,<br>
+                           два действия для нацеливания и одно действие для выстрела.<br>
+                           <br>
+                           Обычно мангонель мечет тяжёлые камни, но может метать и другие снаряды, с другими<br>
+                           эффектами.<br>
+                           <br>
+                           <h4>-ДЕЙСТВИЯ-</h4>
+                           <i><b>Камень из мангонели.</b></i> <i>Дальнобойная атака оружием:</i> +5 к попаданию, дистанция 200/800 фт. (не<br>
+                           может атаковать цели в пределах 60 футов), одна цель. <i>Попадание:</i> 27 (5к10) дробящего урона.  
+                        </a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Образ смерти [Avatar of Death]</h3><br>
+                           <i>Средняя Нежить, нейтрально-злая</i><br>
+                           <b>Класс Доспеха</b> 20<br>
+                           <b>Хиты</b> 2 (1к4)<br>
+                           <b>Скорость 60 футов,</b> летая <b>60 футов</b> (парит)<br>
+                           <br>
+                              <div class="a3b1">
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>СИЛ</b></div>
+                                          <div class="a3b3">16 (<b>+3</b>)</div>
+                                    </div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ЛОВ</b></div>
+                                          <div class="a3b3">16 (<b>+3</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ТЕЛ</b></div>
+                                          <div class="a3b3">16 (<b>+3</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ИНТ</b></div>
+                                          <div class="a3b3">16 (<b>+3</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>МДР</b></div>
+                                          <div class="a3b3">16 (<b>+3</b>)</div></div>
+                                    <div class="a3b2">
+                                          <div class="a3b3"><b>ХАР</b></div>
+                                          <div class="a3b3">16 (<b>+3</b>)</div></div>
+                                    </div><br>
+                                    <b>Иммунитет к урону</b> некротическая энергия, яд<br>
+                                    <b>Иммунитет к состоянию</b> окаменение, отравление, паралич, очарование, испуг,<br>
+                                    бессознательность<br>
+                                    <b>Чувства</b> истинное зрение <b>60 футов,</b> тёмное зрение <b>60 футов,</b> пассивное Восприятиb<b>13</b><br>
+                                    <b>Опасность</b> 0 (0 или 10 опыта)<br>
+                                    <b>Бонус мастерства +2</b><br>
+                                    <b>Источник:</b> «Dungeon master's guide»<br>
+                                    <br>
+                                    <i><b>Хиты.</b></i> У <b>образа смерти</b> половина от максимума хитов, вызвавшего его персонажа.<br>                                    
+                                    <i><b>Языки.</b></i> Все языки, известные вызвавшему персонажу.<br>                                    
+                                    <i><b>Опасность</b></i> варьируется, 0 опыта.<br>                                    
+                                    <i><b>Бестелесное перемещение.</b></i> Образ может проходить сквозь предметы и других существ, как<br>
+                                    будто они являются труднопроходимой местностью. Он получает 5 (1к10) урона силовым<br>
+                                    полем, если заканчивает ход в предмете.<br>                                    
+                                    <i><b>Иммунитет к изгнанию.</b></i> Образ обладает иммунитетом к умениям, изгоняющим нежить.<br>
+                                    <br>
+                                    <h4>-ДЕЙСТВИЯ-</h4>
+                                    <i><b>Коса смерти.</b></i> Образ проводит призрачной косой сквозь существо, находящееся в пределах 5 футах от него, нанося 7 (1к8 + 3) рубящего урона плюс 4 (1к8) урона некротической энергией.
+                                    
+                        </a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Осадная башня [Siege tower]</h3><br>
+                           <i>Большой Объект</i><br>
+                           <b>Класс Доспеха</b> 15<br>
+                           <b>Хиты</b> 200<br>
+                           <b>Иммунитет к урону</b> психическая энергия, яд<br>
+                           <b>Источник:</b> «Dungeon master's guide»<br>
+                           <br>
+                           Осадная башня это передвижное деревянное сооружение из балок с трапами в одной стене.<br>
+                        Большие деревянные колёса или ролики позволяют солдатам или животным тянуть её или<br>
+                        толкать.<br>
+                        Существа Среднего или меньшего размера могут с помощью осадной башни переходить на<br>
+                        стены высотой до 40 футов. Находящееся в башне существо обладает полным укрытием от<br>
+                        атак извне башни.</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Подвешенный котёл [Suspended cauldron]</h3><br>
+                           <i>Большой Объект</i><br>
+                           <b>Класс Доспеха</b> 19<br>
+                           <b>Хиты</b> 20<br>
+                           <b>Иммунитет к урону</b> психическая энергия, яд<br>
+                           <b>Источник:</b> «Dungeon master's guide»<br>
+                           Этот железный котёл подвешен так, что его можно легко перевернуть, выливая содержимое.<br>
+                           Опустошённый котёл нужно снова наполнить и, скорее всего, заново нагреть, и только тогда<br>
+                           его можно использовать повторно. Котёл заполняется тремя действиями, а опрокидывается<br>
+                           одним.<br>
+                           Котлы могут заполнять и другими жидкостями, такими как кислота или зелёная слизь, с<br>
+                           другими эффектами.<br>
+                                 <br>
+                           <h4>-ДЕЙСТВИЯ-</h4><br>
+                           <b>Кипящее масло.</b> Котёл выливает кипящее масло на площадь 10 × 10 футов непосредственно<br>
+                           под ним. Все существа в этой области должны совершить спасбросок Ловкости Сл 15, получая<br>
+                           10 (3к6) урона огнём при провале или половину этого урона при успехе</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Пушка</h3><br>
+                           <i>Большой Объект</i><br>
+                           <b>Класс Доспеха</b> 19<br>
+                           <b>Хиты</b> 75<br>
+                           <b>Иммунитет к урону</b> психическая энергия, яд<br>
+                           <b>Источник:</b> «Dungeon master's guide»<br>
+                           Пушка с помощью пороха мечет тяжёлые чугунные ядра с разрушительной скоростью. В<br>
+                           кампаниях, где пороха нет, пушка может быть магическим устройством, построенным<br>
+                           гномами или магами-инженерами.<br>
+                           <br>
+                           Обычно пушка покоится на деревянной раме с колёсами. Прежде чем совершить выстрел, её<br>
+                           нужно зарядить и навести на цель. Требуется одно действие для зарядки, одно действие для<br>
+                           нацеливания и одно действие для выстрела.<br>
+                           <br>
+                           <h4>-ДЕЙСТВИЯ-</h4>
+                           <i><b>Пушечное ядро.</b></i> <i>Дальнобойная атака оружием:</i> +6 к попаданию, дистанция 600/2400 футов,<br>
+                           одна цель. <i>Попадание:</i> 44 (8к10) дробящего урона.</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Таран [Ram]</h3><br>
+                           <i>Большой Объект</i><br>
+                           <b>Класс Доспеха</b> 15<br>
+                           <b>Хиты</b> 100<br>
+                           <b>Иммунитет к урону</b> психическая энергия, яд<br>
+                           <b>Источник:</b> «Dungeon master's guide»<br>
+                           Таран состоит из передвижной рамки, на которой подвешено тяжёлое бревно. Бревно<br>
+                           оковано железом и с лёгкостью высаживает двери и ломает баррикады.<br>
+                           <br>
+                           Требуется как минимум четыре существа Среднего размера, чтобы орудовать тараном.<br>
+                           Благодаря крыше сверху эти существа обладают полным укрытием от атак сверху.<br>
+                           <br>
+                           <h4>-ДЕЙСТВИЯ-</h4>
+                           <i><b>Таран.</b></i> <i>Рукопашная атака оружием:</i> +8 к попаданию, досягаемость 5 фт., один предмет.<br>
+                           <i>Попадание:</i> 16 (3к10) дробящего урона.</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Требушет [Trebuchet]</h3><br>
+                           <i>Большой Объект</i><br>
+                           <b>Класс Доспеха 15</b><br>
+                           <b>Хиты 150</b><br>
+                           <b>Иммунитет к урону</b> психическая энергия, яд<br>
+                           <b>Источник:</b> «Dungeon master's guide»<br>
+                           Требушет это мощный онагр, мечущий тяжёлые снаряды по высокой дуге, и может попадать<br>
+                           по целям за укрытиями. Прежде чем совершить выстрел, требушет нужно зарядить и навести<br>
+                           на цель. Требуется два действия для зарядки, два действия для нацеливания и одно действие<br>
+                           для выстрела.<br>
+                           <br>
+                           Обычно требушет мечет тяжёлые камни, но может метать и другие снаряды, такие как бочки с<br>
+                           маслом или нечистотами, с другими эффектами.<br>
+                           <br>
+                           <h4>-ДЕЙСТВИЯ-</h4>
+                           <i><b>Камень из требушета.</b></i> Дальнобойная атака оружием: +5 к попаданию, дистанция 300/1200 фт. (не может атаковать цели в пределах 60 футов), одна цель. Попадание: 44 (8к10) дробящего урона.</a>
+                  </div>
+            </div>
+</div>
+</div>
+</div>
+   </body>
+    </html>

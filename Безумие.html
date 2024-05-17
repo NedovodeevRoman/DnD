@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">
+    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/16.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+            align-content: center;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 210%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000; 
+            font-size: 1vw;            
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.4%;
+      width: 98%;
+      height: 3.2%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;   
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+.a31 h1 {
+      position: absolute;
+      left: 2%;
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 4%;
+      width: 98%;
+      height: 95.5%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a32 a{position: absolute;
+      left: 1%;
+      right: 1%;
+      font-size: 1vw;
+}
+
+.a3b1 {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+      font-size: 1vw;
+
+}
+
+.a32 td {
+      border-style: solid;
+      border-color: #000;
+      border-width: 2px;
+}
+
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png" width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+            <div class="a31"><h1>Безумие</h1></div>
+            <div class="a32">
+<a><b>Источник:</b> «Dungeon master's guide»<br>
+<br>
+В обычных кампаниях персонажи не сходят с ума от ужасов, с которыми им доведётся встретиться, и
+ежедневной резни, но иногда стресс от такой жизни становится невыносимым. Если в вашей кампании
+прослеживается тема ужаса, вы можете использовать правила безумия, чтобы усилить эту тему, подчеркнув
+жуткий характер угроз, с которыми встречаются искатели приключений.<br>
+<br>
+
+<h3>СХОЖДЕНИЕ С УМА</h3><hr width="98%" color="#000"><br>
+Разнообразные магические эффекты могут обрекать на безумие даже стойкие умы. Некоторые заклинания,
+такие как связь с иным миром и знак, могут насылать безумие, и вы можете использовать приведённые здесь
+правила вместо тех, что описаны в эффекте этих заклинаний. Болезни, яды и планарные эффекты, такие как
+психический ветер Астрала и воющие ветра Пандемониума тоже могут насылать безумие. Некоторые артефакты
+ломают психику персонажей, использующих их или настраивающихся на них.<br>
+<br>
+Сопротивление насылающему безумие эффекту обычно требует спасброска Мудрости или Харизмы. Если в
+вашей игре присутствует характеристика Здравомыслие (смотрите в главе 9), существа могут вместо этого
+совершать спасбросок Здравомыслия.<br>
+<br>
+
+<h3>ЭФФЕКТЫ БЕЗУМИЯ</h3><hr width="98%" color="#000"><br>
+Безумие может быть кратковременным, долговременным или бессрочным. Большая часть относительно
+обычных эффектов причиняет кратковременное безумие, которое длится лишь несколько минут. Более ужасные
+или суммируемые эффекты могут привести к долговременному или бессрочному безумию. Под действием
+кратковременного безумия персонаж находится 1к10 минут. Под действием долговременного безумия
+персонаж находится 1к10 × 10 часов. Персонаж, находящийся под действием бессрочного безумия, получает
+новую слабость из соответствующей таблицы, пока не будет исцелён.<br>
+<br>
+<h3>КРАТКОВРЕМЕННОЕ БЕЗУМИЕ</h3>
+<div><table class="a3b1" rules="groups">
+      <tbody>
+      <tr><td align="center"><b>к100</b></td>
+      <td align="center"><b>Эффект (длится 1к10 минут)</b></td>
+      </tr>
+      <tr>
+      <td>01-20</td>
+      <td>Персонаж уходит в себя и становится парализованным. Эффект оканчивается, если персонаж получает урон.</td>
+      </tr>
+      <tr>
+      <td>21-30</td>
+      <td>Персонаж становится недееспособным и всё время, пока безумен, кричит, смеётся или плачет.</td>
+      </tr>
+      <tr>
+      <td>31-40</td>
+      <td>Персонаж становится испуганным и в каждом раунде должен тратить и действие и перемещение на то, чтобы бежать от источника страха.</td>
+      </tr>
+      <tr>
+      <td>41-50</td>
+      <td>Персонаж начинает что-то невнятно бормотать и не может ни нормально общаться, ни накладывать заклинания.</td>
+      </tr>
+      <tr>
+      <td>51-60</td>
+      <td>Персонаж должен в каждом раунде действием атаковать ближайшее существо.</td>
+      </tr>
+      <tr>
+      <td>61-70</td>
+      <td>Персонаж видит яркие галлюцинации и совершает с помехой проверки характеристик.</td>
+      </tr>
+      <tr>
+      <td>71-75</td>
+      <td>Персонаж выполняет всё, что ему говорят, если это не суицидальный приказ.</td>
+      </tr>
+      <tr>
+      <td>76-80</td>
+      <td>Персонаж испытывает непреодолимое желание есть что-то странное, такое как грязь, слизь или отбросы.</td>
+      </tr>
+      <tr>
+      <td>81-90</td>
+      <td>Персонаж ошеломлён.</td>
+      </tr>
+      <tr>
+      <td>91-100</td>
+      <td>Персонаж теряет сознание. </td>
+      </tr>
+      </tbody>
+      </table></div>
+<br>
+<h3>ДОЛГОВРЕМЕННОЕ БЕЗУМИЕ</h3>
+<div><table class="a3b1" rules="groups">
+      <tbody>
+      <tr><td align="center"><b>к100</b></td>
+      <td align="center"><b>Эффект (длится 1к10 × 10 часов)</b></td>
+      </tr>
+      <tr>
+      <td>01-10</td>
+      <td>Персонаж чувствует непреодолимое желание повторять одни и те же действия, например, мыть руки, трогать вещи, молиться или считать монеты.</td>
+      </tr>
+      <tr>
+      <td>11-20</td>
+      <td>Персонаж видит яркие галлюцинации и совершает с помехой проверки характеристик.</td>
+      </tr>
+      <tr>
+      <td>21-30</td>
+      <td>Персонаж страдает от сильной паранойи. Он совершает с помехой проверки Мудрости и Харизмы.</td>
+      </tr>
+      <tr>
+      <td>31-40</td>
+      <td>Персонаж считает нечто (обычно, источник безумия) ужасно отвратительным, как если бы он находился под эффектом «антипатия» заклинания антипатия/симпатия [antipathy/sympathy].</td>
+      </tr>
+      <tr>
+      <td>41-45</td>
+      <td>Персонаж испытывает сильное заблуждение. Выберите зелье. Персонаж считает, что находится под действием этого зелья.</td>
+      </tr>
+      <tr>
+      <td>46-55</td>
+      <td>Персонаж становится привязанным к «талисману» — персоне или предмету — и совершает с помехой броски атаки, проверки характеристик и спасброски, когда находится более чем в 30 футах от него.</td>
+      </tr>
+      <tr>
+      <td>56-65</td>
+      <td>Персонаж становится слепым (25%) или глухим (75%).</td>
+      </tr>
+      <tr>
+      <td>66-75</td>
+      <td>Персонаж испытывает неконтролируемую дрожь или тик, из-за чего совершает с помехой броски атаки, проверки характеристик и спасброски, зависящие от Силы или Ловкости.</td>
+      </tr>
+      <tr>
+      <td>76-85</td>
+      <td>Персонаж страдает от частичной амнезии. Персонаж помнит, кем он является, и сохраняет расовые особенности и классовые умения, но не узнаёт других существ или ничего не помнит до момента наступления сумасшествия.</td>
+      </tr>
+      <tr>
+      <td>86-90</td>
+      <td>Каждый раз, когда персонаж получает урон, он должен преуспеть в спасброске Мудрости Сл 15, иначе он попадёт под действие заклинания смятение, как будто провалив спасбросок от него. Эффект смятения длится 1 минуту.</td>
+      </tr>
+      <tr>
+      <td>91-95</td>
+      <td>Персонаж теряет способность говорить.</td>
+      </tr>
+      <tr>
+      <td>96-100</td>
+      <td>Персонаж теряет сознание. Ни тряска, ни урон не могут его привести в чувство.</td>
+      </tr>
+      </tbody>
+      </table></div>
+<br>
+<h3>БЕССРОЧНОЕ БЕЗУМИЕ</h3>
+<div><table class="a3b1" rules="groups">
+      <tbody>
+      <tr><td align="center"><b>к100</b></td>
+      <td align="center"><b>Слабость (длится до исцеления)</b></td>
+      </tr>
+      <tr>
+      <td>01-15</td>
+      <td>«Пока я пьян, я мыслю здраво»</td>
+      </tr>
+      <tr>
+      <td>16-25</td>
+      <td>«Я храню всё, что нахожу»</td>
+      </tr>
+      <tr>
+      <td>26-30</td>
+      <td>«Я хочу походить на того, кого хорошо знаю — я перенимаю его стиль в одежде, привычки и даже имя»</td>
+      </tr>
+      <tr>
+      <td>31-35</td>
+      <td>«Я должен искажать факты, преувеличивать и откровенно лгать, чтобы быть интересным для других»</td>
+      </tr>
+      <tr>
+      <td>36-45</td>
+      <td>«Меня интересует только достижение моей цели, и я игнорирую всё, лишь бы её достичь»</td>
+      </tr>
+      <tr>
+      <td>46-50</td>
+      <td>«Мне трудно заботиться о том, что происходит вокруг меня»</td>
+      </tr>
+      <tr>
+      <td>51-55</td>
+      <td>«Мне не нравится то, как люди меня всё время оценивают»</td>
+      </tr>
+      <tr>
+      <td>56-70</td>
+      <td>«Я самый умный, самый мудрый, самый сильный, самый быстрый и самый красивый из всех, кого я знаю»</td>
+      </tr>
+      <tr>
+      <td>71-80</td>
+      <td>«Я убеждён, что за мной охотятся мощные враги, и повсюду находятся их агенты. Я уверен, что все они за мной постоянно следят»</td>
+      </tr>
+      <tr>
+      <td>81-85</td>
+      <td>«Я могу доверять только одному другу. И этого особого друга вижу только я»</td>
+      </tr>
+      <tr>
+      <td>86-95</td>
+      <td>«Я не могу ничего воспринимать всерьёз. Чем серьёзнее ситуация, тем более смешной она мне кажется»</td>
+      </tr>
+      <tr>
+      <td><nobr>96-100</nobr></td>
+      <td>«Я понял, что мне очень нравится убивать живых существ» </td>
+      </tr>
+      </tbody>
+      </table></div>
+<br>
+<h3>ЛЕЧЕНИЕ БЕЗУМИЯ</h3><hr width="98%" color="#000"><br>
+Заклинание <i>умиротворение [calm emotions]</i> может подавить действие безумия, а заклинание <i>малое
+восстановление [lesser restoration]</i> может избавить от краткосрочного или долговременного безумия. В
+зависимости от источника безумия, могут помочь заклинания <i>снятие проклятья [remove curse]</i> или <i>рассеивание
+зла и добра [dispel evil and good]</i>. От бессрочного безумия может помочь заклинание <i>высшее восстановление
+[greater restoration]</i> или более сильная магия.
+</a>
+</div>
+ </div>
+</div>
+</body>
+</html>  
