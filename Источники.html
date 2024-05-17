@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">
+    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/19.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+            align-content: center;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 310%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000; 
+            font-size: 1vw;            
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.3%;
+      width: 98%;
+      height: 2.1%;
+      left: 1%;
+      right: 1%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;   
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+.a31 h1 {
+      position: absolute;
+      left: 2%;
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 2.7%;
+      width: 98%;
+      height: 97%;
+      left: 1%;
+      right: 1%;
+      vertical-align: middle;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 0.2%;
+      font-size: 1vw;
+}
+
+.a3b {
+      background-color: none;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a32 a{position: absolute;
+      left: 1%;
+      right: 1%;
+      font-size: 1vw;
+}
+
+
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png"  width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+            <div class="a31"><h1>Источники</h1></div>
+            <div class="a32">
+                  <div class="a3b">
+                        <a><h3>PLAYER'S HANDBOOK</h3><hr width="98%" color="#000">
+                              <h3>КНИГА ИГРОКА, PH (2014)</h3><br>
+                              «Книга игрока» — ключевое руководство для любого игрока в Dungeons & Dragons. Книга содержит
+                              правила по созданию и развитию персонажей, предыстории и навыки, исследование и бои, экипировку, заклинания и многое, многое другое.<br>
+                              <br>
+                              Использован перевод: студия «PHantom»</a>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>DUNGEON MASTER'S GUIDE</h3><hr width="98%" color="#000">
+                              <h3>РУКОВОДСТВО МАСТЕРА, DMG (2014)</h3><br>
+                              «Руководство Мастера» содержит материалы, способные дать вдохновение и наставление, зажечь искру
+                              вашего воображения и создать миры, полные приключений для ваших игроков.<br>
+                              <br>
+                              Внутри вы найдете инструменты для создания миров, советы и хитрости для построения запоминающихся
+                              подземелий и приключений, опциональные правила игры, сотни классических магических D&D предметов и многое другое!<br>
+                              <br>
+                              Использован перевод: студия «PHantom»</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>MONSTER MANUAL</h3><hr width="98%" color="#000">
+                              <h3>БЕСТИАРИЙ, MM (2014)</h3><br>
+                              В «Бестиарии собраны орды классических и новых существ, включая драконов, великанов, пожирателей
+                              разума, бехолдеров и прочих.<br>
+                              <br>
+                              Использован перевод: студия «PHantom» и dungeons_ru</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>SWORD COAST ADVENTURER'S GUIDE</h3><hr width="98%" color="#000">
+                              <h3>РУКОВОДСТВО ПРИКЛЮЧЕНЦА ПО ПОБЕРЕЖЬЮ МЕЧЕЙ, SCAG (2015)</h3><br>
+                              Первое «расширение» библиотеки пятой редакции включает в себя описание «центральной части» Забытых Королевств,
+                              населяющих их рас и их религий. Классы получили описание «мирских» организаций, из которых могут выходить
+                              приключенцы — такие, как ордена паладинов или монахов — а предыстории пополнились двенадцатью новыми, включая
+                              «представителя фракции», дающего возможность членства в одной из фракций Побережья. Самые крупные из фракций:
+                              Орден Перчатки, Изумрудный Анклав, Арфисты, Жентарим — конечно, тоже были описаны.<br>
+                              <br>
+                              Использован перевод: dungeons_ru(stivie, korfax, AmethystBard, Kensy, Ankheg, Divuz, Kestel, Tenkai, greylex)</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>VOLO'S GUIDE TO MONSTERS(LEGACY)</h3><hr width="98%" color="#000">
+                              <h3>СПРАВОЧНИК ВОЛО ПО МОНСТРАМ, VGM (2016)</h3><br>
+                              Как и обещает название, в этой книге Волотамп Геддарм, или попросту Воло, собрал описания более сотни существ и целых культур,
+                              таких, как юань-ти, кобольды, орки, гиганты и другие. Более того, некоторые расы и цивилизации, как выяснилось, тоже способны
+                              рождать приключенцев, несмотря на то, что эти существа могли считаться безразличными к делам Забытых Королевств — или даже
+                              откровенно к ним враждебными;<br>
+                              <br>
+                              Справочник добавляет играбельные расы аасимаров, фирболгов, голиафов, кенку, людоящеров, табакси, тритонов, багбиров, гоблинов,
+                              хобгоблинов, кобольдов, орков и чистокровных юань-ти.<br>
+                              <br>
+                              Использован перевод: dungeons_ru(Kitar, blackhole_next, stivie, Xattttta, Kestel, vanillaDM, FtZ, stallion971, palant, r0ot35)</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>XANATHAR'S GUIDE TO EVERYTHING</h3><hr width="98%" color="#000">
+                              <h3>РУКОВОДСТВО ЗАНАТАРА ОБО ВСЁМ, XGE (2017)</h3><br>
+                              «Руководство Занатара обо всём» по большому счёту можно считать продолжением «Книги игрока». Значительная
+                              часть «Руководства» отдана развитию возможностей персонажей: в книге добавлено более 30 новых архетипов, а
+                              каждый класс обзавелся более проработанной историей становления приключенца.<br>
+                              <br>
+                              Вторая половина книги посвящена проработке мира в руках Мастера: прописаны многие механические моменты,
+                              такие как падение, сон, завязывание узлов; получили значительное развитие ремесленные инструменты,
+                              ловушки, деятельность простоя.<br>
+                              <br>
+                              Использован перевод: dungeons_ru(DUNGEONS_GUEST, r0ot35, Max_well, korfax, Xattttta, stivie, Kitar,
+                              palant, Savlon, poletaew, FtZ, PublicWebTerror, LeoKot, Cezareon, Nexile, schtormung)</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>MORDENKAINEN'S TOME OF FOES(LEGACY)</h3><hr width="98%" color="#000">
+                              <h3>ТОМ МОРДЕНКАЙНЕНА О ВРАГАХ, MTF (2018)</h3><br>
+                              Эта книга фокусируется на описании и проработке некоторых находящихся в состоянии перманентной войны рас:
+                              тифлингов, эльфов, дварфов и дуэргаров, гитов, а также и не понимающих, зачем войны вообще вести,
+                              полуросликов и гномов.<br>
+                              <br>
+                              В Томе также добавлено более сотни существ, характерных для описанных местностей.<br>
+                              <br>
+                              Использован перевод: dungeons_ru, dnd.su (значительная часть текста была переведена машинным способом,
+                              по возможности эти тексты заменяются на литературные)</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>GUILDMASTERS' GUIDE TO RAVNICA</h3><hr width="98%" color="#000">
+                              <h3>ПУТЕВОДИТЕЛЬ МАСТЕРА ГИЛЬДИИ ПО РАВНИКЕ, GGR (2018)</h3><br>
+                              Книга рассказывает о Равнике, мире вселенной Magic: The Gathering, который целиком покрыт городом с
+                              западно-славянской эстетикой. Равника — это место, в котором все разумные существа так или иначе делятся
+                              на 10 гильдий, кухня и отношения которых прописаны в мельчайших подробностях. Здесь вы можете найти
+                              гильдейские предыстории, продвижение по карьерной лестнице, а также новые расы и архетипы! А в проведении
+                              приключения в этом мире бескрайних урбанистических пейзажей вам помогут новые чудовища и магические предметы!<br>
+                              <br>
+                              Использован перевод: dnd.su</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>EBERRON: RISING FROM THE LAST WAR</h3><hr width="98%" color="#000">
+                              <h3>RLW (2019)</h3><br>
+                              Эта книга содержит в себе описание Эберрона, манапанкового мира, пережившего великую войну.
+                              Вникайте в политические игры домов, прокатитесь на воздушном корабле и самом настоящем поезде!
+                              В книжке вы увидите новые сеттинговые расы, а также подрасы, представляющие из себя драконьи метки,
+                              некоторые из которых могут проявиться на представителях разных рас. В дополнение к этому ваш
+                              игровой опыт разбавит парочка интересных черт, новая предыстория, магические предметы и
+                              изобретатель — совершенно новый класс. <br>
+                              <br>
+                              Использован перевод: dnd.su, Dungeons & Dragons: Eberron. Переводы, 3d печать</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>EXPLORER'S GUIDE TO WILDEMOUNT</h3><hr width="98%" color="#000">
+                              <h3>ПУТЕВОДИТЕЛЬ ИССЛЕДОВАТЕЛЯ ПО ДИКОГОРЬЮ, EGW (2020)</h3><br>
+                              «Путеводитель по Дикогорью» — это книга, написанная Мэттом Мёрсером, мастером
+                              самого популярного D&D-шоу — «Critical Role». Дикогорье является лишь одним из материков Экзандрии — мира,
+                              в котором и происходит действие шоу. Здесь вас ожидают описание материка и его истории, приключения, сеттинговые
+                              подрасы и предыстории, архетипы волшебника и воина, чудовища и магические предметы, в том числе и Отголоски
+                              Дивергенции — магические предметы с новой механикой постепенно увеличивающейся силы.<br>
+                              <br>
+                              Использован перевод: dnd.su</a>
+                  </div>
+            </div>
+
+</div>
+ </div>
+</div>
+</body>
+</html>  

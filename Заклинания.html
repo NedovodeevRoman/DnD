@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons</title>
+
+    <link rel="website icon" type="png" href="Изображения/1.png">
+    <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         list-style: none;
+         text-decoration: none;
+        }
+        
+        body {
+            height: 100vh;
+            background: url(Изображения/16.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-y: auto;
+            font-size: 1vw;
+      }
+
+      .a1 {
+            z-index: 1;
+            top: 0%;
+            position: absolute;
+            width: 98%;
+            height: 15%;
+            left: 1%;
+            right: 1%;
+            background: url(Изображения/3.jpg);
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 2%;
+            align-items: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a3 {
+            position: absolute;
+            top: 20%;
+            width: 60%;
+            height: 250%;
+            left: 20%;
+            right: 20%;
+            border-top: 50%;
+            background: url(Изображения/4.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000; 
+            font-size: 1vw;            
+      }
+
+      .a11 {
+            background: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+      }
+
+      .a11:hover {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+      }
+
+      .a12 {
+            width:80%;
+            max-height: 70px;
+            background: url(Изображения/10.jpg);
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 0%;
+            box-shadow: 0 5px 10px #000;
+            font-size: 1vw; 
+      }
+
+      .a12:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+      }
+
+      .a1a{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            left: 5%;
+            right:5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1vw;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-row-gap: 2%;
+            font-size: 1vw; 
+      }
+
+      ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        ul li a{
+            display: block;
+            color: #000;
+        }
+
+        ul li ul {
+            position: static;
+            background: none;
+            display: none;
+            
+        }
+        ul li ul li{
+            background: url(Изображения/12.webp);
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+        }
+
+        ul li:hover > ul{
+            display:block;
+        }
+
+        ul li ul li:hover {
+            -webkit-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+        }
+
+        ul{
+            left: 20px;
+        }
+
+
+.a31 {
+      position: absolute;
+      background-color: none;
+      top: 0.4%;
+      width: 98%;
+      height: 100%;
+      left: 1%;
+      right: 1%;
+      vertical-align: middle;
+      font-size: 1vw; 
+}
+
+.a32 {position: absolute;
+      background-color: none;
+      top: 3%;
+      height: 100%;
+      vertical-align: middle;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 0.3%;
+      font-size: 1vw;
+}
+
+.a3a {
+      background-color: none;
+      height: 2.8%;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a3a h1{
+      position: absolute;
+      left: 2%;
+}
+
+.a3b {
+      background-color: none;
+      border: unset;
+      border-width: 5px;
+      border-color: #000;
+      border-style: double;
+      vertical-align: middle;
+      font-size: 1vw;
+}
+
+.a3b a{
+      position: relative;
+      left: 1%;
+      font-size: 1vw;
+}
+
+
+    </style>
+    </head>
+    <body>
+    <div>
+      <div class="a1">
+            <div class="a1a">
+            <ul><div class="a11">
+                  <li><a href="Главная.html"><img src="Изображения/1.png" width="100px"></a></li></div></ul>
+            <ul><div class="a12">
+                  <li><h4>Персонаж</h4>
+                        <img src="Изображения/5.png" width="20%">
+                        <ul>
+                              <li><a href="Классы.html">Классы</a></li>
+                              <li><a href="Рассы и происхождения.html">Рассы и происхождения</a></li>
+                             
+                              <li><a href="Заклинания.html">Заклинания</a></li>
+                        </ul>
+                  </li>
+            </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Предметы</h4>
+                        <img src="Изображения/6.png" width="20%">
+                        <ul>
+                              <li><a href="Оружие.html">Оружие</a></li>
+                              <li><a href="Доспехи.html">Доспехи</a></li>
+                              <li><a href="Снарежение.html">Снарежение</a></li>
+                              <li><a href="Драгоценности.html">Драгоценности</a></li>
+                              <li><a href="Магические предметы.html">Магические предметы</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Мастерская</h4>
+                        <img src="Изображения/7.png" width="20%">
+                        <ul>
+                              <li><a href="Бестиарий.html">Бестиарий</a></li>
+                              <li><a href="Справочник.html">Спарвочник</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>Инструменты</h4>
+                        <img src="Изображения/8.png" width="20%">
+                        <ul>
+                              <li><a href="Сокровища.html">Сокровишница</a></li>
+                              <li><a href="Безумие.html">Безумие</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+            <ul><div class="a12">
+                  <li><h4>База знаний</h4>
+                        <img src="Изображения/9.png" width="20%">
+                        <ul>
+                              <li><a href="Боги.html">Боги</a></li>
+                              <li><a href="Правила и термины.html">Правила</a></li>
+                              <li><a href="Источники.html">Источники</a></li>
+                        </ul>
+                  </li>
+                  </div></ul>
+          </div>
+          </div>
+      <div class="a3">
+            <div class="a31">
+            <div class="a3a"><h1>Заклинания</h1></div>
+            <div class="a32">
+            <div class="a3b">
+                        <a><h3>Адское возмездие [Hellish rebuke]</h3><br>
+                           <i>1 уровень, воплощение</i><br>
+                           <b>Время накладывания:</b> 1 реакция, совершаемая вами, когда вы получаете урон от существа, находящегося в пределах 60 футов от вас и видимого вами<br>
+                           <b>Дистанция:</b> 60 футов<br>
+                           <b>Компоненты:</b> В, С<br>
+                           <b>Длительность:</b> Мгновенная<br>
+                           <b>Классы:</b> колдун<br>
+                           <b>Архетипы:</b> клятвопреступник (паладин)<br>
+                           <b>Источник:</b> «Player's handbook»<br>
+                           <br>
+                           Вы указываете пальцем, и существо, причинившее вам урон, мгновенно окружается пламенем. Существо должно совершить спасбросок Ловкости. Оно получает 2к10 урона<br>
+                           огнём при провале, или половину этого урона при успехе.<br>
+                           <br>
+                           <i><b>На больших уровнях.</b></i> Если вы накладываете это заклинание, используя ячейку 2-го уровня или выше, урон увеличивается на 1к10 за каждый уровень ячейки выше первого.</a>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Аура живучести [Aura of vitality]</h3><br>
+                              <i>3 уровень, воплощение</i><br>
+                              <b>Время накладывания:</b> 1 действие<br>
+                              <b>Дистанция:</b> На себя (30-футовый радиус)<br>
+                              <b>Компоненты:</b> В<br>
+                              <b>Длительность:</b> Концентрация, вплоть до 1 минуты<br>
+                              <b>Классы:</b> друидTCE, жрецTCE, паладин<br>
+                              <b>Архетипы:</b> боевой кузнец (изобретатель), домен сумерек (жрец), клятва короны (паладин)<br>
+                              <b>Источник:</b> «Player's handbook»<br>
+                              <br>
+                              От вас исходит аура живительной энергии с радиусом 30 футов. Пока заклинание активно, аура перемещается вместе с вами, оставаясь с центром на вас. Вы можете бонусным действием восстанавливать одному любому существу в ауре (включая себя) 2к6 хитов.</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Аура жизни [Aura of life]</h3><br>
+                              <i>4 уровень, ограждение</i><br>
+                              <b>Время накладывания:</b> 1 действие<br>
+                              <b>Дистанция:</b> На себя (30-футовый радиус)<br>
+                              <b>Компоненты:</b> В<br>
+                              <b>Длительность:</b> Концентрация, вплоть до 10 минут<br>
+                              <b>Классы:</b> жрецTCE, паладин<br>
+                              <b>Архетипы:</b> бессмертный (колдун), домен сумерек (жрец), круг дикого огня (друид)<br>
+                              <b>Источник:</b> «Player's handbook»<br>
+                              <br>
+                              От вас исходит защищающая жизнь аура с радиусом 30 футов. Пока заклинание активно, аура перемещается вместе с вами, оставаясь с центром на вас. Все невраждебные существа в ауре (включая вас) обладают сопротивлением урону некротической энергией, и максимум их хитов не может уменьшаться. Кроме того, когда невраждебное живое существо с 0 хитов начинает ход в этой ауре, оно восстанавливает 1 хит.</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Аура очищения [Aura of purity]</h3><br>
+                              <i>4 уровень, ограждение</i><br>
+                              <b>Время накладывания:</b> 1 действие<br>
+                              <b>Дистанция:</b> На себя (30-футовый радиус)<br>
+                              <b>Компоненты:</b> В<br>
+                              <b>Длительность: Концентрация, вплоть до 10 минут<br>
+                              <b>Классы:</b> жрецTCE, паладин<br>
+                              <b>Архетипы:</b> боевой кузнец (изобретатель), домен мира (жрец), клятва смотрителей (паладин)<br>
+                              <b>Источник:</b> «Player's handbook»<br>
+                              <br>
+                              От вас исходит очищающая аура с радиусом 30 футов. Пока заклинание активно, аура перемещается вместе с вами, оставаясь с центром на вас. Все невраждебные существа в ауре (включая вас) не могут заболеть, имеют сопротивление урону ядом и совершают с преимуществом спасброски от эффектов, вызывающих следующие состояния: глухота, испуг, ослепление, отравление, очарование, ошеломление и паралич.</a>
+                  </div>
+            </div>
+            <div class="a3b">
+                  <div>
+                        <a><h3>Безмолвный образ [Silent image]</h3><br>
+                              <i>1 уровень, иллюзия</i><br>
+                              <b>Время накладывания:</b> 1 действие<br>
+                              <b>Дистанция:</b> 60 футов<br>
+                              <b>Компоненты:</b> В, С, М (кусок овечьей шерсти)<br>
+                              <b>Длительность:</b> Концентрация, вплоть до 10 минут<br>
+                              <b>Классы:</b> бард, волшебник, чародей<br>
+                              <b>Источник:</b> «Player's handbook»<br>
+                              Вы создаёте образ предмета, существа или другого видимого явления, помещающийся в объеме в куб с длиной ребра 15 футов. Образ появляется в точке, которую вы видите в пределах дистанции, и существует, пока активно заклинание. Это исключительно зрительная иллюзия, не сопровождаемая звуками, запахами и прочими сенсорными эффектами.<br>
+                              <br>
+                              Вы можете действием заставить образ переместиться в любое место в пределах дистанции. Пока образ меняет местоположение, вы можете изменять его внешность, чтобы перемещение выглядело естественным. Например, если вы создаете образ существа и перемещаете его, вы можете изменить образ, чтобы казалось, что оно идет.<br>
+                              <br>
+                              Физическое взаимодействие с образом даёт понять, что это иллюзия, потому что сквозь него всё проходит. Существа, исследующие образ действием, могут определить, что это иллюзия, совершив успешную проверку Интеллекта (Расследование) против Сл ваших заклинаний. Если существо распознает иллюзию, оно может видеть сквозь неё.</a>
+                  </div>
+            
+      </div>
+       </div>
+      </div>
+      </div>
+    </div>
+   </body>
+    </html>
+
+
+
+    
